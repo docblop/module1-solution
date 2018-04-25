@@ -11,6 +11,7 @@
 
         $scope.splitsies = "";
         $scope.counter = 0;
+        $scope.messageClass = "";
 
         $scope.Check = function () {
             $scope.counter = 0;
@@ -25,12 +26,16 @@
 
             if ($scope.splitsies == '') {
                 $scope.message = "Please enter data first!";
+                $scope.messageClass = "bg-danger text-danger";
             } else if ($scope.counter >= 4) {
-                    $scope.message = "Too much!";
+                $scope.message = "Too much!";
+                $scope.messageClass = "bg-warning text-warning";
             } else if ($scope.counter==0) {
                 $scope.message = "Please enter data first!";
+                $scope.messageClass = "bg-danger text-danger";
             } else {
                 $scope.message = "Enjoy!";
+                $scope.messageClass = "bg-success text-success";
             }
 
 
