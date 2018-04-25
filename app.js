@@ -23,7 +23,7 @@
             if ($scope.counter >= 4) {
                 $scope.message = "Too much!";
             } else if ($scope.counter==0) {
-                $scope.message = "Please enter something!";
+                $scope.message = "Please enter data first!";
             } else {
                 $scope.message = "Enjoy!";
             }
